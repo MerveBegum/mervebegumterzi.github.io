@@ -933,6 +933,34 @@ I hold a Ph.D. & an M.S. in Electrical & Electronics Engineering from Bilkent Un
         </section>
 
 
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            
+            <div class="contact-social-section">
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="mailto:merveterzi@bilkent.edu.tr" title="Email" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=T8-M_f8AAAAJ&view_op=list_works&sortby=pubdate" 
+                       title="Google Scholar" target="_blank" class="social-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/merve-begum-terzi/" 
+                       title="LinkedIn" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/MerveBegum" 
+                       title="GitHub" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <p class="contact-note">Feel free to reach out for collaborations or inquiries</p>
+            </div>
+        </section>
+		
+		
             </form>
         </section>
     </main>
@@ -1055,4 +1083,64 @@ I hold a Ph.D. & an M.S. in Electrical & Electronics Engineering from Bilkent Un
             // İngilizce içerik zaten yüklü
         });
         
- 
+ /* Contact Section Styles */
+.contact-social-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 3rem;
+}
+
+.contact-social-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contact-social-section .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.contact-note {
+    margin-top: 1.5rem;
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
+}
+
+body.dark-mode .contact-social-section {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .contact-note {
+    color: #aaa;
+}
