@@ -433,51 +433,37 @@
             border-bottom: none;
         }
 
-        /* Contact Form */
-        #contactForm {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
-            transition: var(--transition);
-        }
-
-        .form-control:focus {
-            outline: none;
-            border-color: var(--secondary-color);
-            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
-        }
-
-        textarea.form-control {
-            min-height: 150px;
-            resize: vertical;
-        }
-
-        .submit-btn {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            font-weight: 500;
-            transition: var(--transition);
-        }
-
-        .submit-btn:hover {
-            background-color: #2980b9;
-        }
+      
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact</h2>
+    
+    <!-- YENİ EKLENEN "Connect With Me" bölümü burada -->
+    <div style="max-width: 800px; margin: 0 auto; padding: 2rem; background-color: var(--light-color); border-radius: 10px; box-shadow: var(--shadow); margin-bottom: 3rem;">
+        <h3 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.5rem; text-align: center;">Connect With Me</h3>
+        <div class="social-links" style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap;">
+            <a href="mailto:merveterzi@bilkent.edu.tr" title="Email" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--secondary-color); color: white; border-radius: 50%; font-size: 1.5rem; transition: all 0.3s ease; text-decoration: none;">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?hl=en&user=T8-M_f8AAAAJ&view_op=list_works&sortby=pubdate" title="Google Scholar" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--secondary-color); color: white; border-radius: 50%; font-size: 1.5rem; transition: all 0.3s ease; text-decoration: none;">
+                <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/merve-begum-terzi/" title="LinkedIn" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--secondary-color); color: white; border-radius: 50%; font-size: 1.5rem; transition: all 0.3s ease; text-decoration: none;">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/MerveBegum" title="GitHub" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--secondary-color); color: white; border-radius: 50%; font-size: 1.5rem; transition: all 0.3s ease; text-decoration: none;">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p style="margin-top: 1.5rem; color: #666; font-size: 0.9rem; font-style: italic; text-align: center;">Feel free to reach out for collaborations or inquiries</p>
+    </div>
+    
+    <!-- Contact Form (aşağıdaki kısım zaten vardı) -->
+    <form id="contactForm" action="submit_form.php" method="POST">
+        ...
+    </form>
+</section>
+     
 
         /* Footer */
         footer {
@@ -698,29 +684,6 @@ I hold a Ph.D. & an M.S. in Electrical & Electronics Engineering from Bilkent Un
             </div>
         </div>
     </section>
-
-	
-	 <!-- Social Media Links - Horizontally Centered -->
-        <section style="padding: 2rem 0; text-align: center;">
-            <div style="max-width: 800px; margin: 0 auto; padding: 2rem; background-color: var(--light-color); border-radius: 10px; box-shadow: var(--shadow);">
-                <h3 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.5rem;">Connect With Me</h3>
-                <div class="social-links" style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap;">
-                    <a href="mailto:merveterzi@bilkent.edu.tr" title="Email" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--secondary-color); color: white; border-radius: 50%; font-size: 1.5rem; transition: all 0.3s ease; text-decoration: none;">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://scholar.google.com/citations?hl=en&user=T8-M_f8AAAAJ&view_op=list_works&sortby=pubdate" title="Google Scholar" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--secondary-color); color: white; border-radius: 50%; font-size: 1.5rem; transition: all 0.3s ease; text-decoration: none;">
-                        <i class="fas fa-graduation-cap"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/merve-begum-terzi/" title="LinkedIn" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--secondary-color); color: white; border-radius: 50%; font-size: 1.5rem; transition: all 0.3s ease; text-decoration: none;">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/MerveBegum" title="GitHub" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: var(--secondary-color); color: white; border-radius: 50%; font-size: 1.5rem; transition: all 0.3s ease; text-decoration: none;">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <p style="margin-top: 1.5rem; color: #666; font-size: 0.9rem; font-style: italic;">Feel free to reach out for collaborations or inquiries</p>
-            </div>
-        </section>
 
 	
     <!-- Main Content -->
