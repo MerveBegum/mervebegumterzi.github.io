@@ -964,13 +964,14 @@ I hold a Ph.D. & an M.S. in Electrical & Electronics Engineering from Bilkent Un
                 </div>
             </div>
         </section>
-		
 
+		
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
             
             <div class="contact-social-section">
+                <h3>Connect With Me</h3>
                 <div class="social-links">
                     <a href="mailto:merveterzi@bilkent.edu.tr" title="Email" class="social-icon">
                         <i class="fas fa-envelope"></i>
@@ -991,18 +992,33 @@ I hold a Ph.D. & an M.S. in Electrical & Electronics Engineering from Bilkent Un
                 <p class="contact-note">Feel free to reach out for collaborations or inquiries</p>
             </div>
         </section>
-		
-		
-    
+    </main>
+
     <footer>
         <div class="container">
             <div class="footer-content">
                 <p>© 2026 Merve Begum Terzi, Ph.D.</p>
+                <div class="footer-social-links">
+                    <a href="mailto:merveterzi@bilkent.edu.tr" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=T8-M_f8AAAAJ&view_op=list_works&sortby=pubdate" 
+                       title="Google Scholar" target="_blank">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/merve-begum-terzi/" 
+                       title="LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/MerveBegum" 
+                       title="GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
                 <p class="update-date">Last Updated: January 8, 2026</p>
             </div>
         </div>
     </footer>
-		
 
     <!-- Back to Top Button -->
     <div class="back-to-top" id="backToTop">
@@ -1022,159 +1038,4 @@ I hold a Ph.D. & an M.S. in Electrical & Electronics Engineering from Bilkent Un
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.add('active');
             } else {
-                backToTopButton.classList.remove('active');
-            }
-        });
-        
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Highlight current section in navigation
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.nav-links a');
-        
-        window.addEventListener('scroll', () => {
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                
-                if (pageYOffset >= (sectionTop - 100)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-        
-        // Dark mode toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const icon = themeToggle.querySelector('i');
-            if (document.body.classList.contains('dark-mode')) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-                localStorage.setItem('theme', 'light');
-            }
-        });
-        
-        // Check for saved theme preference
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-            const icon = themeToggle.querySelector('i');
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-        }
-        
-        // Language switcher functionality
-        const langTR = document.getElementById('langTR');
-        const langEN = document.getElementById('langEN');
-        
-        langTR.addEventListener('click', () => {
-            langTR.classList.add('active');
-            langEN.classList.remove('active');
-            // Burada Türkçe içerik yüklenebilir
-            alert('Türkçe içerik yakında eklenecektir.');
-        });
-        
-        langEN.addEventListener('click', () => {
-            langEN.classList.add('active');
-            langTR.classList.remove('active');
-            // İngilizce içerik zaten yüklü
-        });
-        
- /* Contact Section Styles */
-.contact-social-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: var(--light-color);
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    margin-bottom: 3rem;
-}
-
-.contact-social-section h3 {
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.contact-social-section .social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.social-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background-color: var(--secondary-color);
-    color: white;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
-
-.social-icon:hover {
-    background-color: var(--primary-color);
-    transform: translateY(-5px);
-}
-
-.contact-note {
-    margin-top: 1.5rem;
-    color: #666;
-    font-size: 0.9rem;
-    font-style: italic;
-    text-align: center;
-}
-
-body.dark-mode .contact-social-section {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-}
-
-body.dark-mode .contact-note {
-    color: #aaa;
-}
+                backToTopButton.classList.remove
