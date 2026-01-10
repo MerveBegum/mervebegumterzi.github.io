@@ -166,30 +166,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
 
-        /* Language Switcher */
-        .language-switcher {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            gap: 5px;
-        }
-
-        .lang-btn {
-            background: rgba(255,255,255,0.2);
-            border: none;
-            color: white;
-            padding: 5px 15px;
-            cursor: pointer;
-            transition: var(--transition);
-            border-radius: 3px;
-            font-weight: 500;
-        }
-
-        .lang-btn.active {
-            background: var(--secondary-color);
-        }
-
+		
         .lang-btn:hover {
             background: rgba(255,255,255,0.3);
         }
@@ -606,15 +583,7 @@
             .filters {
                 justify-content: center;
             }
-            
-            .language-switcher {
-                position: relative;
-                top: 0;
-                right: 0;
-                justify-content: center;
-                margin-top: 1rem;
-            }
-        }
+    
 
         /* Back to top button */
         .back-to-top {
@@ -701,11 +670,6 @@
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- Language Switcher -->
-            <div class="language-switcher">
-                <button id="langTR" class="lang-btn active">TR</button>
-                <button id="langEN" class="lang-btn">EN</button>
-            </div>
             
             <div class="header-content">
             <div class="profile-img">
