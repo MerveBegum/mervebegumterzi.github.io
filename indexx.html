@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merve Begum Terzi, Ph.D. - Postdoctoral Research Fellow at Bilkent University, specializing in Machine Learning, Medical Imaging, and Signal Processing">
+    <meta name="keywords" content="Merve Begum Terzi, PhD, Postdoctoral Researcher, Machine Learning, Medical Imaging, Signal Processing, Bilkent University, UMRAM">
+    <meta name="author" content="Merve Begum Terzi">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Merve Begum Terzi, Ph.D. | Academic Website">
+    <meta property="og:description" content="Postdoctoral Research Fellow at Bilkent University, specializing in Machine Learning, Medical Imaging, and Signal Processing">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mervebegum.github.io/mervebegumterzi.github.io/">
+    
+    <!-- Schema.org markup for academic profile -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Merve Begum Terzi",
+        "honorificSuffix": "Ph.D.",
+        "jobTitle": "Postdoctoral Research Fellow",
+        "affiliation": {
+            "@type": "Organization",
+            "name": "Bilkent University",
+            "department": "Electrical & Electronics Engineering Department"
+        },
+        "alumniOf": {
+            "@type": "Organization",
+            "name": "Bilkent University"
+        },
+        "url": "https://mervebegum.github.io/mervebegumterzi.github.io/",
+        "sameAs": [
+            "https://scholar.google.com/citations?hl=en&user=T8-M_f8AAAAJ",
+            "https://www.linkedin.com/in/merve-begum-terzi/",
+            "https://github.com/MerveBegum"
+        ]
+    }
+    </script>
+    
+    <title>Merve Begum Terzi, Ph.D. | Academic Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --text-color: #333;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            transition: var(--transition);
+        }
+
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode section {
+            border-bottom-color: #333;
+        }
+
+        body.dark-mode .project-item,
+        body.dark-mode .publication-item,
+        body.dark-mode .skill-category {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode h2, 
+        body.dark-mode h3, 
+        body.dark-mode h4 {
+            color: #bb86fc;
+        }
+
+        body.dark-mode .interest-tag {
+            background-color: #2c2c2c;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .timeline-item h4 {
+            color: #bb86fc;
+        }
+
+        body.dark-mode .pub-title {
+            color: #bb86fc;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 1.5rem;
+            background-color: #ddd;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .profile-img-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--primary-color);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .header-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-text h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: var(--light-color);
+            margin-bottom: 1rem;
+        }
+
+        .institution-info {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-item i {
+            color: var(--secondary-color);
+        }
+
+        .download-cv-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+            margin-top: 1.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .download-cv-btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--dark-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links > li {
+            padding: 1rem 1.2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            padding: 0.5rem 0;
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--secondary-color);
+            left: 0;
+            bottom: 0;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a.active {
+            color: var(--secondary-color);
+        }
+
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        /* Mobile Navigation Toggle */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        /* Main Content */
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #eee;
+            scroll-margin-top: 80px;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--secondary-color);
+            display: inline-block;
+        }
+
+        h3 {
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* Research Interests */
+        .interests-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .interest-tag {
+            background-color: var(--light-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border-left: 4px solid var(--secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .interest-tag i {
+            color: var(--secondary-color);
+            font-size: 0.8rem;
+        }
+
+        /* Education & Experience */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: var(--secondary-color);
+        }
+
+        .timeline-item {
+            margin-bottom: 2.5rem;
+            padding-left: 60px;
+            position: relative;
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: var(--secondary-color);
+            left: 24px;
+            top: 5px;
+            z-index: 1;
+        }
+
+        .timeline-item h4 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .date {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            background-color: rgba(231, 76, 60, 0.1);
+            padding: 0.2rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        /* Projects & Publications */
+        .project-item, .publication-item {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 4px solid transparent;
+        }
+
+        .project-item:hover, .publication-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            border-left-color: var(--secondary-color);
+        }
+
+        .project-title, .pub-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .pub-authors {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .pub-venue {
+            color: var(--secondary-color);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pub-venue i {
+            font-size: 0.9rem;
+        }
+
+        .pub-links {
+            margin-top: 0.8rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .pub-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            font-size: 0.9rem;
+        }
+
+        .pub-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Publication Filters */
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            background-color: var(--light-color);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .filter-btn.active {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .filter-btn:hover {
+            background-color: #ddd;
+        }
+
+        .filter-btn.active:hover {
+            background-color: #2980b9;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            flex: 1;
+            min-width: 250px;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .skill-list {
+            list-style-type: none;
+            margin-top: 1rem;
+        }
+
+        .skill-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .skill-list li:last-child {
+            border-bottom: none;
+        }
+
+        .skill-level {
+            display: inline-block;
+            width: 100px;
+            height: 6px;
+            background-color: #eee;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-left: 1rem;
+        }
+
+        .skill-level-fill {
+            height: 100%;
+            background-color: var(--secondary-color);
+        }
+
+        .language-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .language-proficiency {
+            color: var(--secondary-color);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        /* Contact Form */
+        #contactForm {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Contact Section Styles */
+        .contact-social-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: var(--light-color);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
+        }
+
+        .contact-social-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .contact-social-section .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: var(--secondary-color);
+            color: white;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        .contact-note {
+            margin-top: 1.5rem;
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+            text-align: center;
+        }
+
+        body.dark-mode .contact-social-section {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .contact-note {
+            color: #aaa;
+        }
+
+        /* Journal and Memberships Lists */
+        .journal-list, .membership-list {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .journal-list li, .membership-list li {
+            padding: 0.8rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .journal-list li:before, .membership-list li:before {
+            content: "✓";
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        body.dark-mode .journal-list li,
+        body.dark-mode .membership-list li {
+            background-color: #1e1e1e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        .update-date {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .nav-links {
+                gap: 0.5rem;
+            }
+            
+            .nav-links > li {
+                padding: 1rem 0.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-text h1 {
+                font-size: 2rem;
+            }
+            
+            .profile-img {
+                width: 180px;
+                height: 180px;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-container {
+                position: relative;
+            }
+            
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--dark-color);
+                padding: 1rem;
+                box-shadow: var(--shadow);
+                z-index: 1000;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                width: 100%;
+                padding: 0.5rem 0;
+            }
+            
+            section {
+                padding: 2.5rem 0;
+            }
+            
+            .skills-container {
+                flex-direction: column;
+            }
+            
+            .filters {
+                justify-content: center;
+            }
+            
+            .journal-list,
+            .membership-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-item {
+                padding-left: 50px;
+            }
+            
+            .timeline-item:before {
+                left: 14px;
+            }
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--secondary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 999;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        /* Dark Mode Toggle */
+        #themeToggle {
+            position: fixed;
+            bottom: 90px;
+            right: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        #themeToggle:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--secondary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Print Styles */
+        @media print {
+            nav, .back-to-top, #themeToggle, .mobile-menu-btn, .language-switcher, .filters, #contact {
+                display: none !important;
+            }
+            
+            section {
+                page-break-inside: avoid;
+                border: none !important;
+                padding: 1rem 0 !important;
+            }
+            
+            .project-item, .publication-item, .skill-category {
+                box-shadow: none !important;
+                border: 1px solid #ddd !important;
+            }
+            
+            .download-cv-btn {
+                display: none !important;
+            }
+            
+            a {
+                color: #000 !important;
+                text-decoration: none !important;
+            }
+            
+            .social-links, .social-icon {
+                display: none !important;
+            }
+        }
+
+        /* Publication Years */
+        .pub-year {
+            margin-top: 3rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        /* Progress bars for skills */
+        .progress-container {
+            width: 100%;
+            background-color: #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 0.3rem;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-img">
+                    <div class="profile-img-placeholder">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <!-- Uncomment and add your image path -->
+                    <!-- <img src="MBT.png" alt="Merve Begüm Terzi, Ph.D." loading="lazy"> -->
+                </div>
+                <div class="header-text">
+                    <h1>Merve Begum Terzi, Ph.D.</h1>
+                    <h2>Postdoctoral Research Fellow</h2>
+                    <div class="institution-info">
+                        <p>National Magnetic Resonance Research Center (UMRAM)</p>
+                        <p>Electrical & Electronics Engineering Department</p>
+                        <p>Bilkent University, Ankara, Turkey</p>
+                    </div>
+                    
+                    <!-- CV Download Button with file size -->
+                    <a href="CV_MBT_January2026.pdf" download="CV_MBT_January2026.pdf" class="download-cv-btn">
+                        <i class="fas fa-download"></i> Download CV (PDF, ~2MB)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#honors" class="nav-link">Honors</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#memberships" class="nav-link">Memberships</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <div style="font-size: 1.1rem; line-height: 1.8;">
+                <p>I am a Postdoctoral Research Fellow at the <a href="https://umram.bilkent.edu.tr/index.php/tr/" target="_blank" style="color: var(--secondary-color); font-weight: 500;">National Magnetic Resonance Research Center (UMRAM)</a> & the <a href="https://ee.bilkent.edu.tr/en/" target="_blank" style="color: var(--secondary-color); font-weight: 500;">Department of Electrical & Electronics Engineering</a> at Bilkent University, under the supervision of <a href="https://kilyos.ee.bilkent.edu.tr/~saritas/" target="_blank" style="color: var(--secondary-color); font-weight: 500;">Prof. Emine Ulku Saritas</a>.</p>  
+
+                <p>I hold both a Ph.D. & an M.S. in Electrical & Electronics Engineering from Bilkent University, where I was advised by <a href="http://mf.bilkent.edu.tr/?page_id=1893" target="_blank" style="color: var(--secondary-color); font-weight: 500;">Prof. Orhan Arikan</a> for both degrees.</p>
+                
+                <p>My research spans a broad interdisciplinary spectrum at the nexus of signal processing, machine learning, & medical imaging. Over the years, I have worked on diverse projects involving anomaly detection, image processing & reconstruction, computer vision, pattern recognition & clinical decision support systems.</p> 
+                
+                <p>I specialize in developing data-efficient learning approaches—including unsupervised, self-supervised, weakly-supervised, & few-shot learning to address challenges associated with limited annotated datasets. My expertise also extends to inverse problem solving, federated learning & explainable AI (XAI).</p>
+                
+                <p>Through interdisciplinary collaboration & a strong engineering foundation, I aim to translate theoretical machine learning & signal processing advances into tangible improvements in next-generation medical imaging & intelligent health systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Research Interests Section -->
+        <section id="research">
+            <h2>Research Interests</h2>
+            <div class="interests-container">
+                <span class="interest-tag"><i class="fas fa-brain"></i> Machine Learning</span>
+                <span class="interest-tag"><i class="fas fa-robot"></i> Unsupervised & Self-Supervised Learning</span>
+                <span class="interest-tag"><i class="fas fa-network-wired"></i> Federated Learning</span>
+                <span class="interest-tag"><i class="fas fa-eye"></i> Explainable AI (XAI)</span>
+                <span class="interest-tag"><i class="fas fa-wave-square"></i> Signal Processing</span>
+                <span class="interest-tag"><i class="fas fa-image"></i> Image Processing & Reconstruction</span>
+                <span class="interest-tag"><i class="fas fa-eye"></i> Computer Vision</span>
+                <span class="interest-tag"><i class="fas fa-shapes"></i> Pattern Recognition</span>
+                <span class="interest-tag"><i class="fas fa-exclamation-triangle"></i> Anomaly Detection</span>
+                <span class="interest-tag"><i class="fas fa-calculator"></i> Inverse Problems</span>
+                <span class="interest-tag"><i class="fas fa-medkit"></i> Medical Imaging</span>
+                <span class="interest-tag"><i class="fas fa-magnet"></i> Magnetic Particle Imaging (MPI)</span>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Ph.D., Electrical & Electronics Engineering</h4>
+                    <span class="date">2017 - 2023</span>
+                    <p><strong>Bilkent University</strong>, Ankara, Turkey</p>
+                    <p><em>Dissertation Title:</em> Artificial Intelligence-based Hybrid Anomaly Detection & Clinical Decision Support Techniques for Automated Detection of Cardiovascular Diseases & COVID-19</p>
+                    <p><em>Advisor:</em> Prof. Orhan Arikan</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>M.S., Electrical & Electronics Engineering</h4>
+                    <span class="date">2014 - 2017</span>
+                    <p><strong>Bilkent University</strong>, Ankara, Turkey</p>
+                    <p><em>Thesis Title:</em> Early Diagnosis of Acute Coronary Syndromes Automatically by using Features of ECG Recordings</p>
+                    <p><em>Advisor:</em> Prof. Orhan Arikan</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>International Education Experience</h4>
+                    <span class="date">2000 - 2008</span>
+                    <p><strong>Athénée Royal d'Auderghem</strong>, Brussels, Belgium</p>
+                    <p>Complete Secondary Education</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Experience Section -->
+        <section id="experience">
+            <h2>Academic Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Postdoctoral Research Fellow</h4>
+                    <span class="date">2024 – Present</span>
+                    <p><strong>Bilkent University</strong>, Electrical & Electronics Engineering Department & National Magnetic Resonance Research Center (UMRAM), Ankara, Turkey</p>
+                    <p><em>Supervisor:</em> Prof. Emine Ulku Saritas</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>Graduate Research & Teaching Assistant</h4>
+                    <span class="date">2012 – 2023</span>
+                    <p><strong>Bilkent University</strong>, Electrical & Electronics Engineering Department, Ankara, Turkey</p>
+                    <p>Teaching Assistant Performance was formally evaluated as "Exceptional" Five times by course instructors.</p>
+                    <p><strong>Courses Assisted:</strong></p>
+                    <ul style="margin-left: 20px; margin-top: 0.5rem; columns: 2;">
+                        <li>EEE-525 Advanced Signal Processing</li>
+                        <li>EEE-520 Multirate Signal Processing & Wavelet Theory</li>
+                        <li>EEE-501 Linear System Theory</li>
+                        <li>EEE-443/543 Neural Networks</li>
+                        <li>EEE-442/542 Nonlinear Systems</li>
+                        <li>EEE-431 Digital Communications</li>
+                        <li>EEE-424 Digital Signal Processing</li>
+                        <li>EEE-351 Engineering Electromagnetics</li>
+                        <li>EEE-342 Feedback Control Systems</li>
+                        <li>EEE-321 Signals & Systems</li>
+                        <li>EEE-313 Electronic Circuit Design</li>
+                        <li>EEE-212 Microcontrollers & Embedded Systems</li>
+                        <li>EEE-211 Analog Electronics</li>
+                        <li>EEE-201/202 Circuit Theory</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Honors and Awards Section -->
+        <section id="honors">
+            <h2>Honors and Awards</h2>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-award"></i> TUBITAK BIDEB-2250 Performance-based Scholarship Program (2025/1)</p>
+                <p>Awarded in recognition of research performance & active contribution to research projects.</p>
+            </div>
+
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-award"></i> TUBITAK BIDEB-2250 Performance-based Scholarship Program (2024/2)</p>
+                <p>Awarded in recognition of research performance & active contribution to research projects.</p>
+            </div>
+
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-award"></i> TUBITAK BIDEB-2250 Performance-based Scholarship Program (2024/1)</p>
+                <p>Awarded in recognition of research performance & active contribution to research projects.</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-award"></i> TUBITAK BIDEB 2237-A Grant Program (2022)</p>
+                <p>Awarded to support scientific training activities in science & technology.</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-award"></i> TUBITAK BIDEB 2224-A Grant Program (2020)</p>
+                <p>Awarded to support participation in an international scientific conference.</p>
+            </div>
+
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-award"></i> TUBITAK BIDEB 2224-B Grant Program (2018)</p>
+                <p>Awarded to support participation in a national scientific conference.</p>
+            </div>
+                        
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-award"></i> TUBITAK BIDEB 2211-C National Ph.D. Scholarship Program (2017-2018)</p>
+                <p>Awarded to support Ph.D. dissertation research in priority research areas.</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-chalkboard-teacher"></i> Exceptional Teaching Assistant Performance</p>
+                <p>Recognized five times for "Exceptional" Teaching Assistant Performance based on formal faculty evaluations.</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-graduation-cap"></i> Full Merit Scholarship for Graduate Education (2012-2023)</p>
+                <p>Full scholarship for M.S. and Ph.D. studies at Bilkent University.</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-medal"></i> Valedictorian (First in Class) - School of Engineering (2012)</p>
+                <p>Baskent University, Ankara, Turkey.</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-project-diagram"></i> TUBITAK BIDEB 2209-A Undergraduate Research Support (2011-2012)</p>
+                <p>Awarded for Undergraduate Senior Design Project.</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-globe-europe"></i> Erasmus Scholarship for Biomedical Engineering Course (2013)</p>
+                <p>University of Applied Sciences Oldenburg, Wilhelmshaven, Germany.</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-trophy"></i> Outstanding Achievement Scholarship (2008-2012)</p>
+                <p>Awarded for maintaining continuous High-Honor academic standing during undergraduate education.</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-first-place"></i> First Prize - NATO Science Exhibition Competition</p>
+                <p>"Bringing Scientists Together for the Advancement of Science", Brussels, Belgium.</p>
+            </div>
+        </section>
+
+        <!-- Research Projects Section -->
+        <section id="projects">
+            <h2>Research Projects</h2>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-brain"></i> A Neurotechnological Solutions Platform for Challenges Threatening Human Function</p>
+                <p><strong>Funding:</strong> TUBITAK ARDEB 1004 Project (23AG005)</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-thermometer-half"></i> Focused Hyperthermia & Simultaneous Temperature Monitoring with Magnetic Particle Imaging</p>
+                <p><strong>Funding:</strong> TUBITAK ARDEB 1001 Project (122E162)</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-dna"></i> Nanoparticle Fingerprinting for Cancer Imaging with Magnetic Particle Imaging</p>
+                <p><strong>Funding:</strong> TUBITAK ARDEB 1001 Project (120E208)</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-virus"></i> Ensemble Learning–based Hybrid Clinical Decision Support Technique for COVID-19 Detection</p>
+                <p><strong>Funding:</strong> TUSEB Strategic R&D Project – COVID-19 Call (2020-CV01-9081)</p>
+            </div>
+
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-satellite"></i> Modeling Structural Characteristics of Anomalies in the Turkish Ionosphere using ML</p>
+                <p><strong>Funding:</strong> TUBITAK ARDEB 1001 Project (114E541)</p>
+            </div>
+
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-heartbeat"></i> Automated ECG Analysis for Early Detection of Cardiovascular Diseases</p>
+                <p><strong>Funding:</strong> TUBITAK ARDEB 1001 Project (113E174)</p>
+            </div>
+
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-magnet"></i> Magnetic Resonance Electrical Properties Tomography (MREPT)</p>
+                <p><strong>Funding:</strong> TUBITAK ARDEB 1001 Project (11E090)</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-heart"></i> Deep Learning–based Automated Early Detection of Cardiac Diseases</p>
+                <p><strong>Funding:</strong> TUBITAK ARDEB 1001 Project</p>
+            </div>
+
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-microscope"></i> Weakly-Supervised Multiple Instance Learning for Tumor Detection in Histopathology</p>
+                <p><strong>Course Project:</strong> CS-550 Machine Learning (Prof. Cigdem Gunduz Demir)</p>
+            </div>
+
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-robot"></i> Explainable AI (XAI) for Computer Vision Failure Mode Analysis</p>
+                <p><strong>Course Project:</strong> EEE-543 Neural Networks (Prof. Tolga Cukur)</p>
+            </div>
+
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-mri"></i> Numerical Simulation of MRI Sequences</p>
+                <p><strong>Course Project:</strong> EEE-574 Foundations of MRI (Prof. Ergin Atalar)</p>
+            </div>
+            
+            <div class="project-item">
+                <p class="project-title"><i class="fas fa-wind"></i> Ora-Nasal Airflow Measurement System Design</p>
+                <p><strong>Funding:</strong> TUBITAK BIDEB 2209-A Project</p>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            
+            <div class="filters" id="pubFilters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="journal">Journals</button>
+                <button class="filter-btn" data-filter="conference">Conferences</button>
+                <button class="filter-btn" data-filter="preprint">Preprints</button>
+                <button class="filter-btn" data-filter="dataset">Datasets</button>
+                <button class="filter-btn" data-filter="2024">2024</button>
+                <button class="filter-btn" data-filter="2022">2022</button>
+                <button class="filter-btn" data-filter="2021">2021</button>
+                <button class="filter-btn" data-filter="2020">2020</button>
+                <button class="filter-btn" data-filter="2019">2019</button>
+            </div>
+
+            <!-- 2024 Publications -->
+            <h3 class="pub-year">2024</h3>
+            <div class="publication-item" data-categories="journal 2024">
+                <p class="pub-title">Machine Learning based Hybrid Anomaly Detection Technique for Automatic Diagnosis of Cardiovascular Diseases using Cardiac Sympathetic Nerve Activity and Electrocardiogram</p>
+                <p class="pub-authors"><strong>MB Terzi</strong>, O Arikan</p>
+                <p class="pub-venue"><i class="fas fa-book"></i> Biomedical Engineering / Biomedizinische Technik, vol. 69, no. 1, 2024, pp. 79-109</p>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1515/bmt-2022-0406" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                    <a href="https://www.degruyter.com/document/doi/10.1515/bmt-2022-0406/html" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                </div>
+            </div>
+
+            <!-- 2022 Publications -->
+            <h3 class="pub-year">2022</h3>
+            <div class="publication-item" data-categories="journal 2022">
+                <p class="pub-title">Deep Learning-based Hybrid Clinical Decision Support System Algorithm for COVID-19 Diagnosis via PCR Graphics and Thorax CT Images, Preliminary Data</p>
+                <p class="pub-authors">EB Verdi, M Gok, DD Mulazimoglu, <strong>MB Terzi</strong>, AG Kaya, S Erol, O Isik, OU Guvendik, C Uzun, AH Elhan, ZC Karahan, A Azap, A Kaya, O Arikan, OO Kumbasar</p>
+                <p class="pub-venue"><i class="fas fa-book"></i> European Respiratory Journal, vol. 60, suppl 66, September 2022</p>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1183/13993003.congress-2022.1357" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-categories="conference 2022">
+                <p class="pub-title">Deep Learning-based Hybrid Clinical Decision Support System Algorithm for COVID-19 Diagnosis via PCR Curves and Thorax CT Images, Preliminary Data</p>
+                <p class="pub-authors">EB Verdi, DD Mulazimoglu, <strong>MB Terzi</strong>, M Gok, AG Kaya, S Erol, O Isik, OU Guvendik, C Uzun, AH Elhan, ZC Karahan, A Azap, A Kaya, O Arikan, OO Kumbasar</p>
+                <p class="pub-venue"><i class="fas fa-users"></i> 25th Annual National Congress of Turkish Thoracic Society, Antalya, Turkey, May 2022</p>
+            </div>
+
+            <!-- 2021 Publications -->
+            <h3 class="pub-year">2021</h3>
+            <div class="publication-item" data-categories="conference 2021">
+                <p class="pub-title">Detection of Cardiac Arrhythmia using Sympathetic Nerve Activity, Gaussian Mixture Model and Artificial Neural Network</p>
+                <p class="pub-authors"><strong>MB Terzi</strong>, O Arikan</p>
+                <p class="pub-venue"><i class="fas fa-users"></i> 19th National Neuroscience Congress (USK), Ankara, Turkey, November 2021</p>
+            </div>
+
+            <div class="publication-item" data-categories="journal 2021">
+                <p class="pub-title">Detection of Cardiac Arrhythmia using Sympathetic Nerve Activity, Gaussian Mixture Model, and Artificial Neural Network</p>
+                <p class="pub-authors"><strong>MB Terzi</strong>, O Arikan</p>
+                <p class="pub-venue"><i class="fas fa-book"></i> Anatomy: International Journal of Experimental and Clinical Anatomy, November 2021</p>
+            </div>
+
+            <div class="publication-item" data-categories="conference 2021">
+                <p class="pub-title">Deep Learning with Gated Recurrent Neural Networks for Anomaly Detection</p>
+                <p class="pub-authors"><strong>MB Terzi</strong>, O Arikan</p>
+                <p class="pub-venue"><i class="fas fa-users"></i> International Congress on Multidisciplinary Natural Sciences and Engineering (ICOMNAS), Ankara, Turkey, December 2021</p>
+            </div>
+
+            <div class="publication-item" data-categories="conference 2021">
+                <p class="pub-title">Deep Gated Recurrent Unit and Long Short Term Memory-based Anomaly Detection Technique</p>
+                <p class="pub-authors"><strong>MB Terzi</strong>, O Arikan</p>
+                <p class="pub-venue"><i class="fas fa-users"></i> International Congress on Multidisciplinary Natural Sciences and Engineering (ICOMNAS), Ankara, Turkey, December 2021</p>
+            </div>
+
+            <div class="publication-item" data-categories="conference 2021">
+                <p class="pub-title">Anomaly Detection with Deep Long Short Term Memory Networks</p>
+                <p class="pub-authors"><strong>MB Terzi</strong></p>
+                <p class="pub-venue"><i class="fas fa-users"></i> 2021 6th International Conference on Computer Science and Engineering (UBMK), Ankara, Turkey, 2021</p>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1109/UBMK52708.2021.9559034" target="_blank"><i class="fas fa-external-link-alt"></i> DOI: 10.1109/UBMK52708.2021.9559034</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-categories="dataset 2021">
+                <p class="pub-title">The GU-ECG Database: ECG Datasets for Detection and Classification of Acute Myocardial Ischaemia Through Machine Learning</p>
+                <p class="pub-authors"><strong>MB Terzi</strong>, A Abaci, O Arikan, M Candemir, M Dedeoglu</p>
+                <p class="pub-venue"><i class="fas fa-database"></i> Mendeley Data, V1, 2021</p>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.17632/zhr5zsngtg.1" target="_blank"><i class="fas fa-external-link-alt"></i> DOI: 10.17632/zhr5zsngtg.1</a>
+                    <a href="https://data.mendeley.com/datasets/zhr5zsngtg/1" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+                </div>
+            </div>
+
+            <!-- More publications would continue here... -->
+
+            <p style="margin-top: 2rem;"><em>Full list of publications available upon request.</em></p>
+        </section>
+
+        <!-- Memberships Section -->
+        <section id="memberships">
+            <h2>Professional Memberships</h2>
+            <div class="membership-list">
+                <li>COST Association – COST Action Working Group, since 2025</li>
+                <li>Federation of European Neuroscience Societies (FENS), since 2024</li>
+                <li>International Society of Magnetic Resonance in Medicine (ISMRM), since 2023</li>
+                <li>IEEE Engineering in Medicine and Biology Society (EMBS), since 2012</li>
+                <li>IEEE Women in Engineering (WIE), since 2012</li>
+                <li>IEEE Young Professionals, since 2012</li>
+                <li>Institute of Electrical & Electronics Engineering (IEEE), since 2012</li>
+                <li>Turkish Magnetic Resonance Society, since 2023</li>
+                <li>Turkish Society for Brain Research and Neuroscience (TUBAS), since 2023</li>
+                <li>Bilkent University Cognitive Science Society, since 2025</li>
+                <li>UCTEA The Chamber of Electrical Engineers (EMO), since 2012</li>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li>Python <div class="progress-container"><div class="progress-bar" style="width: 95%"></div></div></li>
+                        <li>MATLAB <div class="progress-container"><div class="progress-bar" style="width: 90%"></div></div></li>
+                        <li>Julia <div class="progress-container"><div class="progress-bar" style="width: 80%"></div></div></li>
+                        <li>C, C++ <div class="progress-container"><div class="progress-bar" style="width: 85%"></div></div></li>
+                        <li>CUDA (GPU Computing) <div class="progress-container"><div class="progress-bar" style="width: 75%"></div></div></li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> Machine & Deep Learning</h3>
+                    <ul class="skill-list">
+                        <li>PyTorch <div class="progress-container"><div class="progress-bar" style="width: 90%"></div></div></li>
+                        <li>TensorFlow <div class="progress-container"><div class="progress-bar" style="width: 85%"></div></div></li>
+                        <li>Keras <div class="progress-container"><div class="progress-bar" style="width: 85%"></div></div></li>
+                        <li>scikit-learn <div class="progress-container"><div class="progress-bar" style="width: 90%"></div></div></li>
+                        <li>MONAI <div class="progress-container"><div class="progress-bar" style="width: 80%"></div></div></li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Scientific Computing</h3>
+                    <ul class="skill-list">
+                        <li>Simulink <div class="progress-container"><div class="progress-bar" style="width: 85%"></div></div></li>
+                        <li>COMSOL <div class="progress-container"><div class="progress-bar" style="width: 75%"></div></div></li>
+                        <li>LTSpice <div class="progress-container"><div class="progress-bar" style="width: 80%"></div></div></li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Technical Tools</h3>
+                    <ul class="skill-list">
+                        <li>LaTeX/Overleaf <div class="progress-container"><div class="progress-bar" style="width: 95%"></div></div></li>
+                        <li>Linux <div class="progress-container"><div class="progress-bar" style="width: 85%"></div></div></li>
+                        <li>Git <div class="progress-container"><div class="progress-bar" style="width: 90%"></div></div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Language Skills -->
+            <div class="skill-category" style="margin-top: 2rem;">
+                <h3><i class="fas fa-language"></i> Language Skills</h3>
+                <ul class="skill-list language-list">
+                    <li>English <span class="language-proficiency">Professional working proficiency</span></li>
+                    <li>French <span class="language-proficiency">Professional working proficiency</span></li>
+                    <li>German <span class="language-proficiency">Elementary proficiency</span></li>
+                    <li>Turkish <span class="language-proficiency">Native proficiency</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            
+            <div class="contact-social-section">
+                <div class="social-links">
+                    <a href="mailto:merveterzi@bilkent.edu.tr" title="Email" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=T8-M_f8AAAAJ&view_op=list_works&sortby=pubdate" 
+                       title="Google Scholar" target="_blank" class="social-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/merve-begum-terzi/" 
+                       title="LinkedIn" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/MerveBegum" 
+                       title="GitHub" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://orcid.org/" 
+                       title="ORCID" target="_blank" class="social-icon">
+                        <i class="fab fa-orcid"></i>
+                    </a>
+                </div>
+                <p class="contact-note">Feel free to reach out for collaborations or inquiries</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© <span id="currentYear">2026</span> Merve Begum Terzi, Ph.D.</p>
+                <div class="social-links">
+                    <a href="mailto:merveterzi@bilkent.edu.tr"><i class="fas fa-envelope"></i></a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=T8-M_f8AAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://www.linkedin.com/in/merve-begum-terzi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/MerveBegum" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <p class="update-date">Last Updated: <span id="lastUpdated">January 10, 2026</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Dark Mode Toggle Button -->
+    <button id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script>
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Set last updated date
+        const lastUpdated = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        document.getElementById('lastUpdated').textContent = lastUpdated;
+
+        // Loading animation
+        window.addEventListener('load', function() {
+            const loading = document.getElementById('loading');
+            setTimeout(() => {
+                loading.style.display = 'none';
+            }, 500);
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                    mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+                }
+            });
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinksItems = document.querySelectorAll('.nav-link');
+
+        function highlightNavLink() {
+            let scrollPos = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    navLinksItems.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightNavLink);
+
+        // Back to top functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('active');
+            } else {
+                backToTopButton.classList.remove('active');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Dark mode toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('i');
+        
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Publication filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const publicationItems = document.querySelectorAll('.publication-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                
+                publicationItems.forEach(item => {
+                    const categories = item.getAttribute('data-categories');
+                    
+                    if (filterValue === 'all') {
+                        item.style.display = 'block';
+                    } else if (categories && categories.includes(filterValue)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                
+                // Also show/hide year headings
+                document.querySelectorAll('.pub-year').forEach(yearHeading => {
+                    const year = yearHeading.textContent;
+                    if (filterValue === 'all' || year.includes(filterValue)) {
+                        yearHeading.style.display = 'block';
+                    } else {
+                        yearHeading.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Initialize with all publications showing
+        publicationItems.forEach(item => {
+            item.style.display = 'block';
+        });
+
+        // PDF file size indicator
+        const cvLink = document.querySelector('.download-cv-btn');
+        cvLink.addEventListener('click', function(e) {
+            // You can add file size verification here if needed
+            console.log('CV download initiated');
+        });
+
+        // Lazy loading for images
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.src = img.dataset.src;
+            });
+        }
+    </script>
+</body>
+</html>
